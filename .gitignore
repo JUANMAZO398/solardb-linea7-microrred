@@ -1,0 +1,42 @@
+# ============================================================================
+# .gitignore - SolarDB (Línea 7: Series de Tiempo y Detección de Vacíos)
+# ============================================================================
+
+# Datos crudos y respaldos pesados de OpenCEM (NO subir al repositorio)
+*.sqlite
+*.sqlite3
+*.db
+*.zst
+*.tar
+*.tar.gz
+*.zip
+*.csv
+*.tsv
+*.parquet
+*.sql.gz
+*.dump
+*.backup
+
+# Credenciales, variables de entorno y conexiones locales (Seguridad - Req. 4.H)
+.env
+.env.*
+*.pem
+*.key
+*credentials*
+*secret*
+pgpass.conf
+.pgpass
+
+# Configuración local de DBeaver y editores
+.dbeaver/
+.metadata/
+*.dbeaver-data-sources*
+.vscode/
+.idea/
+
+# Archivos temporales del sistema operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+*.tmp
